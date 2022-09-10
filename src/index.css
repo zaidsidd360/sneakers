@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+.lightgray {
+  color: hsl(220, 14%, 75%);
+}
+
+.hoverDarkgray {
+  color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.navli {
+  color: hsl(220, 14%, 75%);
+  margin-inline: 30px;
+  font-weight: bold;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.navli:hover {
+  cursor: pointer;
+  color: rgb(107 114 128);
+  border-bottom: 4px solid rgb(251 146 60);
+}
