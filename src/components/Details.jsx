@@ -10,7 +10,7 @@ const Details = () => {
       <h1 className="font-bold text-6xl">Air Jordan 1</h1>
       <br />
       <h2 className="font-bold text-4xl">Varsity leader</h2>
-      <p className="mt-8 max-w-lg text-xl">
+      <p className="mt-8 max-w-xl text-xl">
         "Quality inspired by the greatest player ever". That pretty much sums up
         MJ's original signature shoe, dressed down in an understated colourway.
         Richly textured leather done in Stealth and white ages to pure

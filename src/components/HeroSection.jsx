@@ -4,8 +4,8 @@ import Details from "./Details";
 
 const HeroSection = () => {
   return (
-    <div className="flex w-full justify-center items-center mt-24">
-      <div className="w-[40%] h-[60vh]">
+    <div className="flex w-full h-full justify-center items-center mt-12">
+      <div className="w-[40%] h-[67vh]">
         <SplineComponent />
       </div>
       <div className="w-[40%] pl-16">
