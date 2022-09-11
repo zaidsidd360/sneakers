@@ -23,10 +23,15 @@ body {
   font-weight: bold;
   padding-bottom: 40px;
   padding-top: 40px;
+  transition: all 200ms ease;
 }
 
 .navli:hover {
   cursor: pointer;
   color: rgb(107 114 128);
-  border-bottom: 4px solid #922525;
+  border-bottom: 2px solid #962827;
+}
+
+.shadowmine {
+  box-shadow: 0 5px 20px #b63532;
 }

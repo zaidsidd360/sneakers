@@ -1,21 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
+import Plus from "../assets/icon-plus.svg";
+import Minus from "../assets/icon-minus.svg";
+import CartImage from "../assets/icon-cartbottom.svg";
 
 const Details = () => {
+  const [itemNumber, setItemNumber] = useState(0);
   return (
     <div>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur
-      nobis voluptas recusandae minima culpa, sequi doloribus consequuntur quod
-      excepturi quaerat quisquam porro iure blanditiis quae? Lorem ipsum dolor
-      sit amet consectetur, adipisicing elit. Obcaecati provident quas dolore
-      itaque nobis, ea aliquid possimus repellendus eos modi voluptas quam ullam
-      labore tempora in rerum error alias laudantium minus maiores quidem esse
-      distinctio fugiat doloremque? Magnam corrupti velit, neque enim, repellat
-      vel assumenda beatae consequatur harum voluptatem corporis delectus ad
-      magni dicta excepturi dolorem, hic ipsa nostrum. Molestiae nesciunt
-      sapiente qui tenetur iure ex quia, vel recusandae tempora explicabo minima
-      molestias labore expedita porro? Id alias optio consequatur quia dolorem
-      nobis placeat veniam architecto dolores accusamus sunt nostrum assumenda
-      quisquam, tempora iste sit esse velit provident quae delectus!
+      <h1 className="font-bold text-6xl">Air Jordan 1</h1>
+      <br />
+      <h2 className="font-bold text-4xl">Varsity leader</h2>
+      <p className="mt-8 max-w-lg text-xl">
+        "Quality inspired by the greatest player ever". That pretty much sums up
+        MJ's original signature shoe, dressed down in an understated colourway.
+        Richly textured leather done in Stealth and white ages to pure
+        perfection, while classic branding honours the look that redefined
+        basketball and off-court style as we know it.
+      </p>
+      <h1 className="font-bold text-2xl mt-4">$250.00</h1>
+      <h3 className="font-bold text-gray-400 line-through my-2">$500.00</h3>
+      <div className="flex">
+        <div className="flex justify-between items-center w-[20%] bg-gray-200 p-4 rounded-xl">
+          <img
+            onClick={() => {
+              setItemNumber(itemNumber + 1);
+            }}
+            className="cursor-pointer w-5 h-auto"
+            src={Plus}
+            alt="plus"
+          />
+          {itemNumber}
+          <img
+            onClick={() => {
+              itemNumber > 0 && setItemNumber(itemNumber - 1);
+            }}
+            className="cursor-pointer w-5 h-auto"
+            src={Minus}
+            alt="minus"
+          />
+        </div>
+        <div className="flex justify-center items-center w-[40%] p-4 ml-3 text-white bg-[#962827] hover:bg-[#b63532] rounded-xl cursor-pointer shadowmine">
+          <img className="w-5 h-5 mr-2" src={CartImage} alt="" /> Add to cart
+        </div>
+      </div>
     </div>
   );
 };

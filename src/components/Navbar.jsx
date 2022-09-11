@@ -8,7 +8,7 @@ const Navbar = () => {
   const [cartOpen, setCartOpen] = useState(false);
   return (
     <div className="flex justify-center h-[108px]">
-      <ul className="flex items-center w-[75vw] border-b-2 border-gray-200 relative">
+      <ul className="flex items-center w-[70vw] border-b-2 border-gray-200 relative">
         <li>
           <img className="py-10 mr-6 cursor-pointer" src={Logo} alt="" />
         </li>
