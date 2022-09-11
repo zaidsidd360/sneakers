@@ -28,5 +28,5 @@ body {
 .navli:hover {
   cursor: pointer;
   color: rgb(107 114 128);
-  border-bottom: 4px solid rgb(251 146 60);
+  border-bottom: 4px solid #922525;
 }

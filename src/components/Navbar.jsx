@@ -21,7 +21,7 @@ const Navbar = () => {
           className={
             cartOpen
               ? "absolute top-24 -right-32 duration-300 ease-in-out"
-              : "absolute -top-[900px] -right-32 duration-200"
+              : "absolute -top-[900px] -right-32 duration-300"
           }
         >
           <Cart />
