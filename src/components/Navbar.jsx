@@ -3,28 +3,31 @@ import Logo from "../assets/logo.svg";
 import CartImage from "../assets/icon-cart.svg";
 import Avatar from "../assets/image-avatar.png";
 import Cart from "./Cart";
+import CartContextProvider from "../contexts/CartItemContext";
 
 const Navbar = () => {
   const [cartOpen, setCartOpen] = useState(false);
   return (
     <div className="flex justify-center h-[108px]">
-      <ul className="flex items-center w-[70vw] border-b-2 border-gray-200 relative">
+      <ul className="flex items-center px-9 md:px-0 w-full md:w-[70vw] border-b-2 border-gray-200 md:relative fixed top-0 bg-white">
         <li>
           <img className="py-10 mr-6 cursor-pointer" src={Logo} alt="" />
         </li>
-        <li className="navli">Collections</li>
-        <li className="navli">Men</li>
-        <li className="navli">Women</li>
-        <li className="navli">About</li>
-        <li className="navli">Contact</li>
+        <li className="navli hidden md:flex">Collections</li>
+        <li className="navli hidden md:flex">Men</li>
+        <li className="navli hidden md:flex">Women</li>
+        <li className="navli hidden md:flex">About</li>
+        <li className="navli hidden md:flex">Contact</li>
         <div
           className={
             cartOpen
-              ? "absolute top-24 -right-32 duration-300 ease-in-out"
-              : "absolute -top-[900px] -right-32 duration-300"
+              ? "absolute top-24 right-0 md:-right-32 duration-300 ease-in-out"
+              : "absolute -top-[500px] right-0 md:-right-32 duration-300 ease-in-out"
           }
         >
-          <Cart />
+          <CartContextProvider>
+            <Cart />
+          </CartContextProvider>
         </div>
         <div className="flex items-center justify-between ml-auto">
           <li
