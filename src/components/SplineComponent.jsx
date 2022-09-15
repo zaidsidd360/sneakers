@@ -15,7 +15,7 @@ const SplineComponent = () => {
     <Spline
       scene={
         mobile
-          ? "https://prod.spline.design/arS1AKZvFrQNOUO1/scene.splinecode"
+          ? "https://prod.spline.design/W1LC6n2lPFqG0-Uc/scene.splinecode"
           : "https://prod.spline.design/qRiCG8INnQwngVOk/scene.splinecode"
       }
     />

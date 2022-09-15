@@ -29,7 +29,7 @@ body {
 .navli:hover {
   cursor: pointer;
   color: rgb(107 114 128);
-  border-bottom: 2px solid #962827;
+  border-bottom: 3px solid #962827;
 }
 
 .shadowmine {

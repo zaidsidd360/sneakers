@@ -1,20 +1,43 @@
-import React, { useContext } from "react";
-import CartContextProvider, { CartContext } from "../contexts/CartItemContext";
+import React from "react";
+import Jordan from "../assets/jordanred.png";
+import Delete from "../assets/icon-delete.svg";
 
-const Cart = () => {
-  const { cartValue } = useContext(CartContext);
-  console.log(cartValue.itemsInCart);
-
+const Cart = ({ cartValue, setCartValue }) => {
   return (
-    <div className="rounded-xl shadow-2xl h-[300px] w-[100vw] md:w-[400px] md:mx-2 bg-white">
+    <div className="rounded-xl shadow-2xl h-[275px] w-[100vw] md:w-[400px] md:mx-2 bg-white">
       <div className="pl-8 flex justify-start items-center w-full h-[25%] border-b-2 font-bold text-base">
         Cart
       </div>
-      <div className="flex justify-center items-center w-full h-[75%]">
-        {cartValue !== undefined
-          ? `You have ${cartValue.itemsInCart} items in your cart.`
-          : "Your cart is empty."}
-      </div>
+      {cartValue > 0 ? (
+        <div>
+          <div className="flex items-center justify-evenly w-full my-3">
+            <img className="w-24 h-24" src={Jordan} alt="" />
+            <div>
+              <h5 className="font-bold text-gray-400">Air Jordan 1</h5>
+              <h6 className="font-bold text-gray-400">Varsity leader</h6>
+              <p className="text-gray-400 font-bold">
+                Qty.: <strong className="text-black">{cartValue}</strong> Total:{" "}
+                <strong className="text-black">${cartValue * 250}</strong>
+              </p>
+            </div>
+            <img
+              onClick={() => {
+                setCartValue(0);
+              }}
+              className="w-4 cursor-pointer"
+              src={Delete}
+              alt=""
+            />
+          </div>
+          <div className="flex items-center justify-center w-[85%] h-14 mx-auto text-white bg-[#962827] hover:bg-[#b63532] rounded-xl cursor-pointer">
+            Checkout
+          </div>
+        </div>
+      ) : (
+        <div className="flex justify-center items-center w-full h-[100px]">
+          <h5>Your cart is empty.</h5>
+        </div>
+      )}
     </div>
   );
 };

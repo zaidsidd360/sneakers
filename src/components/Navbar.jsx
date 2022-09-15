@@ -3,15 +3,39 @@ import Logo from "../assets/logo.svg";
 import CartImage from "../assets/icon-cart.svg";
 import Avatar from "../assets/image-avatar.png";
 import Cart from "./Cart";
-import CartContextProvider from "../contexts/CartItemContext";
+import Ham from "../assets/icon-menu.svg";
+import Close from "../assets/icon-close.svg";
 
-const Navbar = () => {
+const Navbar = ({ cartValue, setCartValue }) => {
   const [cartOpen, setCartOpen] = useState(false);
+  const [navToggle, setNavToggle] = useState(false);
+
   return (
     <div className="flex justify-center h-[108px]">
-      <ul className="flex items-center px-9 md:px-0 w-full md:w-[70vw] border-b-2 border-gray-200 md:relative fixed top-0 bg-white">
+      <ul className="flex items-center px-5 md:px-0 w-full md:w-[70vw] border-b-2 border-gray-200 md:relative fixed top-0 bg-white">
+        <li
+          onClick={() => {
+            setNavToggle(!navToggle);
+          }}
+          className="absolute z-30 md:hidden"
+        >
+          <img className="w-4 h-4 mr-3" src={navToggle ? Close : Ham} alt="" />
+        </li>
+        <div
+          className={
+            navToggle
+              ? "absolute flex flex-col items-start pl-7 pt-16 top-0 left-0 h-[100vh] w-[65vw] bg-white duration-300 ease-in-out shadow-2xl md:hidden"
+              : "absolute flex flex-col items-start pl-7 pt-16 top-0 left-0 h-[100vh] w-[65vw] bg-white -translate-x-96 duration-300 ease-in-out md:hidden"
+          }
+        >
+          <li className="py-2">Collections</li>
+          <li className="py-2">Men</li>
+          <li className="py-2">Women</li>
+          <li className="py-2">About</li>
+          <li className="py-2">Contact</li>
+        </div>
         <li>
-          <img className="py-10 mr-6 cursor-pointer" src={Logo} alt="" />
+          <img className="py-10 mr-6 ml-6 cursor-pointer" src={Logo} alt="" />
         </li>
         <li className="navli hidden md:flex">Collections</li>
         <li className="navli hidden md:flex">Men</li>
@@ -25,22 +49,25 @@ const Navbar = () => {
               : "absolute -top-[500px] right-0 md:-right-32 duration-300 ease-in-out"
           }
         >
-          <CartContextProvider>
-            <Cart />
-          </CartContextProvider>
+          <Cart cartValue={cartValue} setCartValue={setCartValue} />
         </div>
         <div className="flex items-center justify-between ml-auto">
           <li
-            className="cursor-pointer"
+            className="cursor-pointer relative"
             onClick={() => {
-              setCartOpen(!cartOpen);
+              !navToggle ? setCartOpen(!cartOpen) : null;
             }}
           >
-            <img src={CartImage} alt="" />
+            <img className="w-5 h-5 md:w-6 md:h-6" src={CartImage} alt="" />
+            {cartValue && !cartOpen ? (
+              <div className="absolute -top-3 -right-3 bg-[#962827] text-white w-3 h-3 flex items-center justify-center p-3 rounded-full">
+                {cartValue}
+              </div>
+            ) : null}
           </li>
           <li>
             <img
-              className="w-10 h-10 ml-6 cursor-pointer rounded-full hover:border-orange-400 hover:border-2"
+              className="w-7 h-7 md:w-10 md:h-10 ml-6 cursor-pointer rounded-full hover:border-[#962827] hover:border-2"
               src={Avatar}
               alt=""
             />
