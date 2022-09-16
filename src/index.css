@@ -32,6 +32,29 @@ body {
   border-bottom: 3px solid #962827;
 }
 
+.navligreen {
+  color: hsl(220, 14%, 75%);
+  margin-inline: 30px;
+  font-weight: bold;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  transition: all 200ms ease;
+}
+
+.navligreen:hover {
+  cursor: pointer;
+  color: rgb(107 114 128);
+  border-bottom: 3px solid #748220;
+}
+
 .shadowmine {
   box-shadow: 0 5px 20px #d8403e;
+}
+
+.shadowminegreen {
+  box-shadow: 0 5px 20px #a6ba32;
+}
+
+#border-black {
+  border: 3px solid black;
 }

@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import Home from "./routes/Home"
+import { Routes, Route } from "react-router-dom";
 
 
 class App extends Component {
   render() {
     return (
-        <Home/>
+      <Routes>
+        <Route path="/sneakers" element={<Home />} />
+      </Routes>
     );
   }
 }
