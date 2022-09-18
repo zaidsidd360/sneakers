@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 function Home() {
   const [cartValue, setCartValue] = useState(0);
   const [isGreen, setIsGreen] = useState(false);
+
   return (
     <div>
       <Navbar
