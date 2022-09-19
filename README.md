@@ -1,3 +1,4 @@
+![](https://user-images.githubusercontent.com/87397035/191067494-4c442be1-ab16-43da-957c-938848cb8b35.png)
 # Sneaker3D
 
 This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). Frontend Mentor challenges help you improve your coding skills by building realistic projects. I won't be uploading this as a solution to FE mentor as I believe my design has deviated a little too much from the given design.
