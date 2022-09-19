@@ -1,6 +1,6 @@
 <h1 align="center"><img src="https://user-images.githubusercontent.com/87397035/191067494-4c442be1-ab16-43da-957c-938848cb8b35.png" width="150px" /><br/>Sneaker3D</h1>
 
-This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). Frontend Mentor challenges help you improve your coding skills by building realistic projects. I won't be uploading this as a solution to FE mentor as I believe my design has deviated a little too much from the given design (in a good way). You're gonna need chrome for the smoothest 3D experience. I tried my best at optimizing the models but still for some reason there are somewhat noticable frame drops in other browsers. Oh and you need a stable internet connection for the initial model loading.
+This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). I won't be uploading this as a solution to FE mentor as I believe my design has deviated a little too much from the given design (in a good way). You're gonna need chrome for the smoothest 3D experience. I tried my best at optimizing the models but still for some reason there are somewhat noticable frame drops in other browsers. Oh and you need a stable internet connection for the initial model loading.
 
 ## Table of contents
 
