@@ -3,9 +3,15 @@ import JordanRed from "../assets/jordanred.png";
 import JordanGreen from "../assets/jordangreen.png";
 import Delete from "../assets/icon-delete.svg";
 
-const Cart = ({ cartValue, setCartValue, isGreen }) => {
+const Cart = ({ cartValue, setCartValue, isGreen, cartOpen }) => {
   return (
-    <div className="rounded-xl shadow-2xl h-[275px] w-[100vw] md:w-[400px] md:mx-2 bg-white">
+    <div
+      className={
+        cartOpen
+          ? "rounded-xl opacity-100 shadow-2xl h-[275px] w-[100vw] md:w-[400px] md:mx-2 bg-white duration-300"
+          : "rounded-xl opacity-0 shadow-2xl h-[275px] w-[100vw] md:w-[400px] md:mx-2 bg-white duration-300"
+      }
+    >
       <div className="pl-8 flex justify-start items-center w-full h-[25%] border-b-2 font-bold text-base">
         Cart
       </div>
@@ -19,7 +25,9 @@ const Cart = ({ cartValue, setCartValue, isGreen }) => {
             />
             <div>
               <h5 className="font-bold text-gray-400">Air Jordan 1</h5>
-              <h6 className="font-bold text-gray-400">Varsity leader</h6>
+              <h6 className="font-bold text-gray-400">
+                Varsity {isGreen ? "chieftain" : "leader"}
+              </h6>
               <p className="text-gray-400 font-bold">
                 Qty.: <strong className="text-black">{cartValue}</strong> Total:{" "}
                 <strong className="text-black">${cartValue * 420.69}</strong>

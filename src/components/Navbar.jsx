@@ -1,14 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Logo from "../assets/logo.svg";
 import CartImage from "../assets/icon-cart.svg";
 import Avatar from "../assets/image-avatar.png";
 import Cart from "./Cart";
 import Ham from "../assets/icon-menu.svg";
 import Close from "../assets/icon-close.svg";
+import { useClickAway } from "react-use";
 
 const Navbar = ({ cartValue, setCartValue, isGreen }) => {
   const [cartOpen, setCartOpen] = useState(false);
   const [navToggle, setNavToggle] = useState(false);
+  const cartRef = useRef(null);
+  useClickAway(cartRef, () => {
+    setCartOpen(false);
+  });
 
   return (
     <div className="flex justify-center h-[108px]">
@@ -25,8 +30,8 @@ const Navbar = ({ cartValue, setCartValue, isGreen }) => {
         <div
           className={
             navToggle
-              ? "absolute flex flex-col items-start pl-7 pt-16 top-0 left-0 h-[100vh] w-[65vw] bg-white duration-300 ease-in-out shadow-2xl md:hidden"
-              : "absolute flex flex-col items-start pl-7 pt-16 top-0 left-0 h-[100vh] w-[65vw] bg-white -translate-x-96 duration-300 ease-in-out md:hidden"
+              ? "absolute opacity-100 flex flex-col items-start pl-7 pt-16 top-0 left-0 h-[100vh] w-[65vw] bg-white duration-500 ease-in-out shadow-2xl md:hidden"
+              : "absolute opacity-0 flex flex-col items-start pl-7 pt-16 top-0 left-0 h-[100vh] w-[65vw] bg-white -translate-x-96 duration-500 ease-in-out md:hidden"
           }
         >
           <li className="py-2">Collections</li>
@@ -74,23 +79,13 @@ const Navbar = ({ cartValue, setCartValue, isGreen }) => {
           Contact
         </li>
         <div
-          className={
-            cartOpen
-              ? "absolute top-24 right-0 md:-right-32 duration-300 ease-in-out"
-              : "absolute -top-[500px] right-0 md:-right-32 duration-300 ease-in-out"
-          }
+          ref={cartRef}
+          className="flex items-center justify-between ml-auto"
         >
-          <Cart
-            cartValue={cartValue}
-            setCartValue={setCartValue}
-            isGreen={isGreen}
-          />
-        </div>
-        <div className="flex items-center justify-between ml-auto">
           <li
             className="cursor-pointer relative"
             onClick={() => {
-              !navToggle ? setCartOpen(!cartOpen) : null;
+              !navToggle && !cartOpen ? setCartOpen(true) : setCartOpen(false);
             }}
           >
             <img className="w-5 h-5 md:w-6 md:h-6" src={CartImage} alt="" />
@@ -105,6 +100,20 @@ const Navbar = ({ cartValue, setCartValue, isGreen }) => {
                 {cartValue}
               </div>
             ) : null}
+            <div
+              className={
+                cartOpen
+                  ? "absolute top-[55px] -right-[73px] md:-right-32 duration-300 ease-in-out"
+                  : "absolute -top-[500px] -right-[73px] md:-right-32 duration-300 ease-in-out"
+              }
+            >
+              <Cart
+                cartOpen={cartOpen}
+                cartValue={cartValue}
+                setCartValue={setCartValue}
+                isGreen={isGreen}
+              />
+            </div>
           </li>
           <li>
             <img
