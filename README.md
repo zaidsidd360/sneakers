@@ -1,6 +1,6 @@
-# Frontend Mentor - E-commerce product page solution
+<h1 align="center"><img src="https://user-images.githubusercontent.com/87397035/191067494-4c442be1-ab16-43da-957c-938848cb8b35.png" width="150px" /><br/>Sneaker3D</h1>
 
-This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). I won't be uploading this as a solution to FE mentor as I believe my design has deviated a little too much from the given design (in a good way). You're gonna need chrome for the smoothest 3D experience. I tried my best at optimizing the models but still for some reason there are somewhat noticable frame drops in other browsers. Oh and you need a stable internet connection for the initial model loading.
 
 ## Table of contents
 
@@ -10,11 +10,8 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -30,62 +27,32 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](https://user-images.githubusercontent.com/87397035/190924629-d0b2f6f8-6588-42d4-bb58-cd31adb64c42.png)
+![](https://user-images.githubusercontent.com/87397035/190924626-4d9e8d90-700c-4387-8b6d-387fbfef02fe.png)
+![](https://user-images.githubusercontent.com/87397035/190924624-51ffb5a0-3a2b-446c-80a1-31b8bf2e9c44.png)
+![](https://user-images.githubusercontent.com/87397035/190924631-886bad9b-a2e4-462c-be10-2c3bfd5695b7.png)
+![](https://user-images.githubusercontent.com/87397035/190924633-c93195a8-7b1b-4d54-8e6a-b94c20a4c193.png)
+![smallnav](https://user-images.githubusercontent.com/87397035/190924634-7ca81695-0942-46b8-b83a-a7a1003e09bb.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Sneakers3D](https://zaidsidd360.github.io/sneakers)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+- [Spline](https://spline.design/) - Tool for 3D web experiences
+- [Tailwind css](https://tailwindcss.com/) - For styles
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+In future projects, I want to work with the useReducer hook and learn the under-the-hood workings of it. Also, I want to keep working with Spline tool more and maybe even dive into some Three.js or React-three-fiber. Working with 3D is epic!
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+- Frontend Mentor - [@zaidsidd360](https://www.frontendmentor.io/profile/zaidsidd360)
+- Twitter - [@zaidsidd360](https://www.twitter.com/zaidsidd360)
