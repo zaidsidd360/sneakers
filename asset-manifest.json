@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sneakers/static/css/main.edd6ad61.css",
-    "main.js": "/sneakers/static/js/main.502525d9.js",
+    "main.css": "/sneakers/static/css/main.8441443b.css",
+    "main.js": "/sneakers/static/js/main.1ca46183.js",
     "static/js/275.b90a7bc8.chunk.js": "/sneakers/static/js/275.b90a7bc8.chunk.js",
     "static/js/526.e0e42661.chunk.js": "/sneakers/static/js/526.e0e42661.chunk.js",
     "static/js/232.21b694fd.chunk.js": "/sneakers/static/js/232.21b694fd.chunk.js",
@@ -18,14 +18,14 @@
     "static/media/icon-minus.svg": "/sneakers/static/media/icon-minus.c2872cf441f93a1d5c91a576fc70ae36.svg",
     "static/media/icon-close.svg": "/sneakers/static/media/icon-close.c390448669f3a8a4c4b2ada2f9938959.svg",
     "static/media/icon-menu.svg": "/sneakers/static/media/icon-menu.c6107d03f1edcf73523ebd8cbc50a443.svg",
-    "main.edd6ad61.css.map": "/sneakers/static/css/main.edd6ad61.css.map",
-    "main.502525d9.js.map": "/sneakers/static/js/main.502525d9.js.map",
+    "main.8441443b.css.map": "/sneakers/static/css/main.8441443b.css.map",
+    "main.1ca46183.js.map": "/sneakers/static/js/main.1ca46183.js.map",
     "275.b90a7bc8.chunk.js.map": "/sneakers/static/js/275.b90a7bc8.chunk.js.map",
     "526.e0e42661.chunk.js.map": "/sneakers/static/js/526.e0e42661.chunk.js.map",
     "232.21b694fd.chunk.js.map": "/sneakers/static/js/232.21b694fd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.edd6ad61.css",
-    "static/js/main.502525d9.js"
+    "static/css/main.8441443b.css",
+    "static/js/main.1ca46183.js"
   ]
 }
