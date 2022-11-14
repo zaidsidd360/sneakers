@@ -25,7 +25,7 @@ Users should be able to:
 - Add items to the cart
 - View the cart and remove items from it
 
-### Screenshot
+### Screenshots
 
 ![](https://user-images.githubusercontent.com/87397035/190924629-d0b2f6f8-6588-42d4-bb58-cd31adb64c42.png)
 ![](https://user-images.githubusercontent.com/87397035/190924626-4d9e8d90-700c-4387-8b6d-387fbfef02fe.png)
