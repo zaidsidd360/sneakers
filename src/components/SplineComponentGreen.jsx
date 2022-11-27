@@ -1,15 +1,15 @@
 import React, { Suspense } from "react";
-const Spline = React.lazy(() => import("@splinetool/react-spline"));
+import Spline from "@splinetool/react-spline";
 
-const SplineComponentGreen = ({ mobile }) => {
+const SplineComponentGreen = ({ windowWidth }) => {
+  const handleLoad = (spline) => {
+    windowWidth < 400 ? spline.setZoom(0.46) : spline.setZoom(0.85);
+  };
   return (
     <Suspense fallback={<div>Loading 3d model...</div>}>
       <Spline
-        scene={
-          mobile
-            ? "https://prod.spline.design/ztDdIqf4uTrdGRAk/scene.splinecode"
-            : "https://prod.spline.design/Xowfr6QZF2y0KQiG/scene.splinecode"
-        }
+        onLoad={handleLoad}
+        scene={"https://prod.spline.design/Xowfr6QZF2y0KQiG/scene.splinecode"}
       />
     </Suspense>
   );
