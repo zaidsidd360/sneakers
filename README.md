@@ -5,7 +5,7 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 ## Table of contents:
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
+  - [The Challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -15,7 +15,7 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 
 ## Overview:
 
-### The challenge:
+### The Challenge:
 
 Users should be able to:
 
