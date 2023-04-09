@@ -1,6 +1,6 @@
 <h1 align="center"><img src="https://user-images.githubusercontent.com/87397035/191067494-4c442be1-ab16-43da-957c-938848cb8b35.png" width="150px" /><br/>Sneaker3D</h1>
 
-This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). You're gonna need Chrome (or Firefox) for the smoothest 3D experience. I tried my best at optimizing the models but still for some reason there are somewhat noticable frame drops in the Brave browser. Oh and this should be obvious but you need a stable internet connection for the initial model loading.
+This is a solution to [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). You're gonna need Chrome (or Firefox) for the smoothest 3D experience. I tried my best at optimizing the models but still for some reason there are somewhat noticable frame drops in the Brave browser. Oh and this should be obvious but you need a stable internet connection for the initial model loading.
 
 ## Table of content:
 
